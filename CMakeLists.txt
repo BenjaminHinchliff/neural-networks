@@ -6,7 +6,6 @@ cmake_minimum_required (VERSION 3.8)
 project ("MNIST")
 
 set(HEADERS
-    "stb_image_write.h"
     "load_mnist_dataset.h"
     "Network.h")
 

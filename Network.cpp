@@ -101,5 +101,11 @@ void Network::backprop(const Eigen::VectorXd& a, const Eigen::VectorXd& target)
         first_nabla_w.push_back(delta[i] * activations[activations.size() - 2].transpose());
     }
     nabla_w[nabla_w.size() - 1] = first_nabla_w;
-    std::cout << nabla_w[nabla_w.size() - 1] << '\n';
+    for (int l = 2; l <= layers; ++l)
+    {
+        Eigen::VectorXd sp = z_primes[z_primes.size() - l];
+        auto baseWeights = weights[weights.size() - l + 1];
+        std::cout << baseWeights << '\n';
+        //auto delta = 
+    }
 }

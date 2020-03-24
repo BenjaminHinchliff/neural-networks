@@ -29,8 +29,8 @@ int main()
 	//std::cout << test << '\n';
 
 	Network net = Network(std::vector<int>{2, 3, 2});
-	std::cout << "Weights\n" << net.weights << '\n';
-	std::cout << "Biases\n" << net.biases << '\n';
+	//std::cout << "Weights\n" << net.weights << '\n';
+	//std::cout << "Biases\n" << net.biases << '\n';
 
 	net.weights[0][0] << 0.1, 0.2;
 	net.weights[0][1] << 0.3, 0.4;
